@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Technologies from './components/Technologies';
 import About from './components/About';
 import Projects from './components/Projects';
 import Action from './components/Action';
@@ -10,8 +11,9 @@ function App() {
 
    return (
     <>
-      <Header navItems={["Home", "About", "Projects", "Contact"]}/>
+      <Header />
       <Hero />
+      <Technologies />
       <About />
       <Projects />
       <Action />

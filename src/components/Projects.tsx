@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-        <section>
+        <section id="projects">
             <h2>FEATURED WORK</h2>
             <div>
                 <div className="flex items-center">
