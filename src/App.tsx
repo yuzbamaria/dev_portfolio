@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Technologies from './components/Technologies';
 import About from './components/About';
 import Projects from './components/Projects';
-import Action from './components/Action';
 import Footer from './components/Footer';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Technologies />
       <About />
       <Projects />
-      <Action />
       <Footer />
     </>
   )

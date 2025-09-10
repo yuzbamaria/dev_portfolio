@@ -1,7 +1,30 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
+  const textRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+  if (!textRef.current) return;
+
+  const words = textRef.current.querySelectorAll("span");
+  const tl = gsap.timeline();
+
+  tl.fromTo(
+    words,
+    { y: 20, opacity: 0 },          // start slightly lower
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,               // slightly longer
+      ease: "power2.out",
+      stagger: 0.3,                // slower stagger
+    }
+  );
+}, []);
+
   return (
     <section className="py-10 flex flex-col justify-center items-center px-4 sm:px-16">
       <div className="relative flex flex-col lg:flex-row items-center justify-between w-full gap-8">
@@ -9,8 +32,12 @@ export default function Hero() {
           <p className="text-xl font-inter font-light mb-4">
             Hi, I'm Maria Yuzba
           </p>
-          <h1 className="font-montserrat font-semibold text-7xl mb-4">
-            Fullstack <br /> <span className="text-purple-700">developer</span>
+           <h1
+            ref={textRef}
+            className="font-montserrat font-semibold text-7xl mb-4 overflow-hidden"
+          >
+            <span className="block">Fullstack</span>
+            <span className="block text-purple-700">developer</span>
           </h1>
 
           <p className="text-lg sm:text-xl max-w-xl font-inter font-light mb-4 pb-4 border-b-2 border-gray-200">
