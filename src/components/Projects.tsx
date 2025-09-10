@@ -100,7 +100,7 @@ export default function Projects() {
                 icon={faArrowRight}
                 className="mx-2 w-4 h-4 -rotate-45"
               />
-              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-2/3"></span>
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
             </div>
             <a
               href="https://github.com/enBloc-org/kindly"
@@ -114,7 +114,7 @@ export default function Projects() {
                   icon={faArrowRight}
                   className="mx-2 w-4 h-4 -rotate-45"
                 />
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-2/3"></span>
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
               </div>
             </a>
           </div>
@@ -152,7 +152,7 @@ export default function Projects() {
                   icon={faArrowRight}
                   className="mx-2 w-4 h-4 -rotate-45"
                 />
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-2/3"></span>
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
               </div>
             </a>
             <a
@@ -167,7 +167,7 @@ export default function Projects() {
                   icon={faArrowRight}
                   className="mx-2 w-4 h-4 -rotate-45"
                 />
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-2/3"></span>
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
               </div>
             </a>
           </div>
